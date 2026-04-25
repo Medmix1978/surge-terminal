@@ -1,0 +1,56 @@
+{
+  "trades": [],
+  "signals": [
+    {
+      "id": 1,
+      "timestamp": "2026-04-25T00:00:00.000Z",
+      "pair": "ETH/USD",
+      "side": "BUY",
+      "source": "Economic Calendar",
+      "confidence": 92,
+      "reason": "Fed rate decision: Hold \u2192 ETH long triggered",
+      "impact": "HIGH",
+      "executed": 1,
+      "price": 3845.2
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-04-25T00:00:00.000Z",
+      "pair": "BTC/USD",
+      "side": "BUY",
+      "source": "CryptoPanic",
+      "confidence": 78,
+      "reason": "ETF inflow spike detected \u2192 BTC position increased",
+      "impact": "MEDIUM",
+      "executed": 1,
+      "price": 97600.0
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-04-25T00:00:00.000Z",
+      "pair": "ETH/USD",
+      "side": "BUY",
+      "source": "Kraken API",
+      "confidence": 45,
+      "reason": "Whale wallet movement \u2192 ETH alert",
+      "impact": "LOW",
+      "executed": 0,
+      "price": 3820.5
+    }
+  ],
+  "bot_config": {
+    "activePairs": "[\"ETH/USD\", \"BTC/USD\"]",
+    "strategyMode": "News-Driven",
+    "strategies": "[\"Momentum\", \"Breakout\"]",
+    "maxPositionSize": "25",
+    "minTradeAmount": "100",
+    "stopLossPercent": "2.5",
+    "takeProfitPercent": "5",
+    "tradingAllocation": "1000",
+    "newsSources": "[\"CryptoPanic\", \"Kraken API\", \"Economic Calendar\"]",
+    "autoTrade": "false",
+    "demoMode": "false"
+  },
+  "api_keys": {},
+  "news_cache": []
+}
